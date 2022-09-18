@@ -33,17 +33,32 @@ body {
 }
 
 /* CONTENT */
-/* .content {
+.content {
+  box-shadow: -0.3rem 0 .4rem rgb(0, 0, 0, .5);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: var(--width-content);
   height: var(--height-container);
   background: linear-gradient(rgba(188, 98, 70, .5), rgba(188, 98, 70, .5)), url("../img/coantent.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
-  flex-direction: column;
+  border-radius: 2rem 0 0 2rem;
 }
 
-.login {
+.title {
+  color: var(--color-white);
+  font-size: 2.5rem;
+  text-shadow: .2rem .1rem .2rem rgba(0, 0, 0, .5);
+}
+
+.desc {
+  color: var(--color-white);
+  text-shadow: .2rem .1rem .2rem rgba(0, 0, 0, .5);
+  font-size: 1.5rem;
+}
+/* .login {
   display: flex;
 } */
