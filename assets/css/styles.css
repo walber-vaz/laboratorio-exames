@@ -1,0 +1,25 @@
+/* VARS */
+:root {
+  --font: 'Roboto', sans-serif;
+  --font-width-p: .5rem;
+  --font-width-button: .8rem;
+  --width-content: 250px;
+  --width-login: 400px;
+  --height-container: 420px;
+  --color-primary: #5CA8A0;
+  --color-secondary: #BC6246;
+  --color-white: #F8F8F8;
+}
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: var(--font);
+  background-color: var(--color-primary);
+}
