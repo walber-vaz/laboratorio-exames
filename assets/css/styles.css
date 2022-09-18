@@ -59,6 +59,44 @@ body {
   text-shadow: .2rem .1rem .2rem rgba(0, 0, 0, .5);
   font-size: 1.5rem;
 }
-/* .login {
+
+/* LOGIN */
+.login {
   display: flex;
-} */
+  align-items: center;
+  justify-content: center;
+  width: var(--width-login);
+  height: var(--height-container);
+  background-color: var(--color-white);
+  border-radius: 0 2rem 2rem 0;
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form #name, .form #password {
+  padding: .8rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-white);
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  width: 18rem;
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  border-bottom: .1rem solid #dedede;
+}
+
+.form #name:focus, .form #password:focus {
+  border: .1rem solid var(--color-secondary);
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: #d2d2d2;
+}
