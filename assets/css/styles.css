@@ -8,6 +8,7 @@
   --height-container: 420px;
   --color-primary: #5CA8A0;
   --color-secondary: #BC6246;
+  --color-hover: #bb6b52;
   --color-white: #F8F8F8;
 }
 
@@ -17,6 +18,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* BODY */
@@ -34,7 +39,7 @@ body {
 
 /* CONTENT */
 .content {
-  box-shadow: -0.3rem 0 .4rem rgb(0, 0, 0, .5);
+  box-shadow: 0 .2rem 1rem rgb(0, 0, 0, .5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,6 +67,7 @@ body {
 
 /* LOGIN */
 .login {
+  box-shadow: 0 .2rem 1rem rgb(0, 0, 0, .5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +86,7 @@ body {
 }
 
 .form #name, .form #password {
-  padding: .8rem;
+  padding: 1rem;
   outline: none;
   border: none;
   background-color: var(--color-white);
@@ -89,14 +95,44 @@ body {
   width: 18rem;
   font-size: 1.5rem;
   color: var(--color-secondary);
-  border-bottom: .1rem solid #dedede;
-}
-
-.form #name:focus, .form #password:focus {
-  border: .1rem solid var(--color-secondary);
+  border-bottom: .1rem solid #ccc;
 }
 
 input::placeholder {
   font-size: 1rem;
   color: #d2d2d2;
+}
+
+/* BTN */
+.btn {
+  width: 18rem;
+  margin-top: 1rem;
+  padding: .8rem;
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--color-hover);
+}
+
+/* DESC FORM */
+.desc-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18rem;
+}
+
+.desc-form a {
+  font-size: .8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: var(--color-secondary);
 }
