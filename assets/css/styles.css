@@ -23,3 +23,10 @@ body {
   font-family: var(--font);
   background-color: var(--color-primary);
 }
+
+/* CONTAINER */
+.container {
+  display: flex;
+  width: var(--width-content);
+  height: var(--height-container);
+}
