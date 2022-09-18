@@ -13,6 +13,7 @@
 
 /* RESET */
 * {
+  font-family: var(--font);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -20,13 +21,29 @@
 
 /* BODY */
 body {
-  font-family: var(--font);
   background-color: var(--color-primary);
 }
 
 /* CONTAINER */
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CONTENT */
+/* .content {
+  display: flex;
   width: var(--width-content);
   height: var(--height-container);
+  background: linear-gradient(rgba(188, 98, 70, .5), rgba(188, 98, 70, .5)), url("../img/coantent.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  flex-direction: column;
 }
+
+.login {
+  display: flex;
+} */
